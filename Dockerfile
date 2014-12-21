@@ -7,4 +7,7 @@ MAINTAINER Xueshan Feng <sfeng@stanford.edu>
 
 RUN pip install awscli s3cmd
 
-VOLUME ["/apps","/data"]
+VOLUME		["/apps","/data"]
+COPY   		. /
+ENTRYPOINT	["/app/start.sh"]
+CMD		[""]
