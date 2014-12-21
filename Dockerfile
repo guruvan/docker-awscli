@@ -7,4 +7,4 @@ MAINTAINER Xueshan Feng <sfeng@stanford.edu>
 
 RUN pip install awscli s3cmd
 
-VOLUME /apps
+VOLUME ["/apps","/data"]
