@@ -4,8 +4,7 @@ if [ -n ${AWS_ACCESS_KEY} ]
 then
   if [ -z ${AWS_SECRET_KEY} ]
   then 
-    echo "You need an AWS_SECRET_KEY. Exiting..."
-    exit 1
+    echo "You need an AWS_SECRET_KEY."
   fi
   echo "[default]" > /root/.aws/credentials
   echo "aws_access_key_id = ${AWS_ACCESS_KEY}" >> /root/.aws/credentials
